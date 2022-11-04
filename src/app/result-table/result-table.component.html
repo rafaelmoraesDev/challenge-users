@@ -1,0 +1,32 @@
+<div class="m-3 text-center">
+  <table class="table table-striped">
+    <thead>
+      <ng-container>
+        <th scope="col">Id</th>
+        <th scope="col">Username</th>
+        <th scope="col">Password</th>
+        <th scope="col">Enabled</th>
+        <th scope="col">Register Date</th>
+        <th scope="col">Name</th>
+        <th scope="col">Surname</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Phone</th>
+      </ng-container>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let user of users | async">
+        <tr>
+          <td scope="row">{{user._id}}</td>
+          <td scope="row">{{user.username}}</td>
+          <td scope="row">{{user.password}}</td>
+          <td scope="row">{{user.is_enabled}}</td>
+          <td scope="row">{{user.register_date}}</td>
+          <td scope="row">{{user.name}}</td>
+          <td scope="row">{{user.surname}}</td>
+          <td scope="row">{{user.email}}</td>
+          <td scope="row">{{user.phone}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>

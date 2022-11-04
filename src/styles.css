@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+.app-search-bar{
+  background-color: rgba(32, 53, 28, 0.8);
+}
